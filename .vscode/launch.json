@@ -6,20 +6,15 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "com.log4jshell.App",
-            "projectName": "log4jtest",
-            "vmArgs": "-Dlog4j2.formatMsgNoLookups=true",
+            "cwd": "${workspaceFolder}/app",
+            "projectName": "app",
+            // "vmArgs": "-Dlog4j2.formatMsgNoLookups=true",
             "env": {
-                "MAX_FILE": "5",
-                "MAX_SIZE": "50",
+                "appName": "app",
+                "dependencyName": "dependency"
             }
         }
     ]
