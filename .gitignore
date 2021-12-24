@@ -24,6 +24,7 @@ tomcat
 *.factorypath
 *.pyc
 *.log
+
 # Maven 
 */target/
 
